@@ -32,7 +32,7 @@ function TodoContainer() {
 
   const startEditing = (todo_id) => {
     const editing_arr = todos.map((item) => {
-      if (item.id == todo_id) {
+      if (item.id === todo_id) {
         item.isEditing = true;
       }
       return item;
@@ -42,7 +42,7 @@ function TodoContainer() {
 
   const finishEditing = (todo) => {
     const editing_arr = todos.map((item) => {
-      if (item.id == todo.id) {
+      if (item.id === todo.id) {
         return todo;
       }
       return item;
